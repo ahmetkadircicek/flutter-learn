@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/base/view/home_view.dart';
-import 'package:ikea_clone/core/base/view/product_details_view.dart';
 import 'package:ikea_clone/core/base/view/search_view.dart';
 
 class MainPageView extends StatelessWidget {
@@ -11,11 +10,10 @@ class MainPageView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: PageView(
-          // physics: const NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           children: const [
             HomeView(),
             SearchView(),
-            ProductDetailsView(),
             Center(
               child: Text('Profile'),
             ),
@@ -29,7 +27,14 @@ class MainPageView extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(),
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+              width: 0.3,
+            ),
+          ),
+        ),
         height: MediaQuery.of(context).size.height * 0.1,
         child: const Padding(
           padding: EdgeInsets.symmetric(vertical: 15.0),

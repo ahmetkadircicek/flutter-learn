@@ -77,39 +77,50 @@ class CategoryView extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
               child: SizedBox(
                 height: 45,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 10,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          elevation: 0,
-                          foregroundColor: Theme.of(context).colorScheme.onSurface,
-                          backgroundColor: Theme.of(context).colorScheme.onSurface.withOpacity(0.05),
-                          surfaceTintColor: Colors.transparent,
-                        ),
-                        onPressed: () {},
-                        child: const Body2(
-                          text: 'Category',
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 0,
-                        ),
-                      ),
-                    );
-                  },
-                ),
+                child: CategoryListView(),
               ),
             ),
             const CategoryGridView(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class CategoryListView extends StatelessWidget {
+  const CategoryListView({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: 10,
+      itemBuilder: (BuildContext context, int index) {
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 5.0),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              elevation: 0,
+              foregroundColor: Theme.of(context).colorScheme.onSurface,
+              backgroundColor: Theme.of(context).colorScheme.onSurface.withOpacity(0.05),
+              surfaceTintColor: Colors.transparent,
+            ),
+            onPressed: () {},
+            child: const Body2(
+              text: 'Category',
+              fontWeight: FontWeight.bold,
+              letterSpacing: 0,
+            ),
+          ),
+        );
+      },
     );
   }
 }

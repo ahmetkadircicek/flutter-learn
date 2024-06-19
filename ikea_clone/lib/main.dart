@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ikea_clone/core/base/view/checkout_view.dart';
-import 'package:ikea_clone/core/base/view/main_page_view.dart';
-import 'package:ikea_clone/core/base/view/product_details_view.dart';
+import 'package:ikea_clone/core/base/view/discover.dart';
 import 'package:ikea_clone/product/theme/theme.dart';
 
 void main() {
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeMode.system == ThemeMode.light ? AppTheme.lightTheme : AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: const MainPageView(),
+      home: const DiscoverView(),
     );
   }
 }
