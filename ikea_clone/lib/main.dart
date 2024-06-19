@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ikea_clone/core/base/view/home_view.dart';
+import 'package:ikea_clone/core/base/view/checkout_view.dart';
 import 'package:ikea_clone/core/base/view/main_page_view.dart';
+import 'package:ikea_clone/core/base/view/product_details_view.dart';
 import 'package:ikea_clone/product/theme/theme.dart';
 
 void main() {

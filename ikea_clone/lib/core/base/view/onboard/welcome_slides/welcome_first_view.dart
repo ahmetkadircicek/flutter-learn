@@ -26,13 +26,13 @@ class WelcomeFirstView extends StatelessWidget {
             ),
             const SizedBox(
               height: 30,
-              child: Subtitle(
+              child: Subtitle1(
                 text: 'You can now shop inspiratinal rooms based on your style.',
                 textAling: TextAlign.center,
               ),
             ),
             const SizedBox(height: 5),
-            const Subtitle(
+            const Subtitle1(
               text: 'Skip',
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,

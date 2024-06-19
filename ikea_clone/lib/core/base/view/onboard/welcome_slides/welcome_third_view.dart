@@ -25,12 +25,12 @@ class WelcomeThirdView extends StatelessWidget {
             const CurrentPageIndicator(
               currentIndex: 3,
             ),
-            const Subtitle(
+            const Subtitle1(
               text: 'Access your digital IKEA Family card anytime',
               textAling: TextAlign.center,
             ),
             const SizedBox(height: 5),
-            const Subtitle(
+            const Subtitle1(
               text: 'Done',
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,

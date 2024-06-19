@@ -31,7 +31,7 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 30),
-            Headline(text: 'Explore and get inspired'),
+            Headline1(text: 'Explore and get inspired'),
             SizedBox(height: 20),
             HomeCarousel(),
           ],
@@ -75,7 +75,7 @@ class HomeCarousel extends StatelessWidget {
                     children: [
                       Body(
                         text: 'SVARTISDAL',
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w800,
                         letterSpacing: -0.5,
                       ),
                       Body(
@@ -83,7 +83,7 @@ class HomeCarousel extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         letterSpacing: -0.5,
                       ),
-                      Headline(
+                      Headline1(
                         text: '£70',
                       ),
                     ],

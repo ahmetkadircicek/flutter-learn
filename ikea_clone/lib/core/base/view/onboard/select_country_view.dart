@@ -37,18 +37,18 @@ class SelectCountryView extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Headline(text: LocaleKeys.countrySelecHeadline),
+                            const Headline1(text: LocaleKeys.countrySelecHeadline),
                             const SizedBox(height: 10),
                             SizedBox(
                               width: MediaQuery.of(context).size.width * 0.8,
-                              child: const Subtitle(text: LocaleKeys.countrySelectSubtitle),
+                              child: const Subtitle1(text: LocaleKeys.countrySelectSubtitle),
                             )
                           ],
                         ),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Subtitle(text: LocaleKeys.countrySelectRegion),
+                            Subtitle1(text: LocaleKeys.countrySelectRegion),
                             SizedBox(
                               width: double.infinity,
                               child: CountryDropdownMenu(),
@@ -58,7 +58,7 @@ class SelectCountryView extends StatelessWidget {
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Subtitle(text: LocaleKeys.countrySelectLanguage),
+                            Subtitle1(text: LocaleKeys.countrySelectLanguage),
                             Body(text: LocaleKeys.countrySelectEnglish, fontWeight: FontWeight.w500),
                           ],
                         ),

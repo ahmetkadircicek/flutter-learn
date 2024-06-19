@@ -25,7 +25,7 @@ class EnableTrackingView extends StatelessWidget {
                   const SizedBox(height: 50),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.6,
-                    child: const Headline(
+                    child: const Headline1(
                       text: LocaleKeys.enableTrackingHeadline,
                     ),
                   ),

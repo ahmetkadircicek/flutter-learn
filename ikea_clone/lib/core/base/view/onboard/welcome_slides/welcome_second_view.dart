@@ -23,12 +23,12 @@ class WelcomeSecondView extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const CurrentPageIndicator(currentIndex: 2),
-            const Subtitle(
+            const Subtitle1(
               text: 'Quickly save your favourites to shopping lists.',
               textAling: TextAlign.center,
             ),
             const SizedBox(height: 5),
-            const Subtitle(
+            const Subtitle1(
               text: 'Skip',
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,
