@@ -25,9 +25,11 @@ class Headline2 extends StatelessWidget {
   const Headline2({
     super.key,
     required this.text,
+    this.textAlign,
   });
 
   final String text;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +39,7 @@ class Headline2 extends StatelessWidget {
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
+      textAlign: textAlign,
     );
   }
 }

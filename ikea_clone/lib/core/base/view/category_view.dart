@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:ikea_clone/core/components/text.dart';
 
 class CategoryView extends StatelessWidget {

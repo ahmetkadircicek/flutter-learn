@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/base/view/home_view.dart';
+import 'package:ikea_clone/core/base/view/profile_view.dart';
 import 'package:ikea_clone/core/base/view/search_view.dart';
 
 class MainPageView extends StatelessWidget {
@@ -10,13 +11,11 @@ class MainPageView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: PageView(
-          physics: const NeverScrollableScrollPhysics(),
+          // physics: const NeverScrollableScrollPhysics(),
           children: const [
             HomeView(),
             SearchView(),
-            Center(
-              child: Text('Profile'),
-            ),
+            ProfileView(),
             Center(
               child: Text('Favorites'),
             ),
