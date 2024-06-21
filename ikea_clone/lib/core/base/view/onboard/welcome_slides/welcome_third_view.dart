@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/base/view/onboard/welcome_slides/welcome_first_view.dart';
 import 'package:ikea_clone/core/components/text.dart';
 import 'package:ikea_clone/core/constants/color_constants.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class WelcomeThirdView extends StatelessWidget {
   const WelcomeThirdView({super.key});
@@ -26,12 +27,12 @@ class WelcomeThirdView extends StatelessWidget {
               currentIndex: 3,
             ),
             const Subtitle1(
-              text: 'Access your digital IKEA Family card anytime',
+              text: LocaleKeys.thirdWelcomeViewTitle,
               textAling: TextAlign.center,
             ),
             const SizedBox(height: 5),
             const Subtitle1(
-              text: 'Done',
+              text: LocaleKeys.thirdWelcomeViewDone,
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,
             ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:ikea_clone/core/components/privacy_checkbox.dart';
 import 'package:ikea_clone/core/components/text.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class CheckoutView extends StatelessWidget {
   const CheckoutView({super.key});
@@ -11,7 +11,7 @@ class CheckoutView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Body(
-          text: 'Checkout',
+          text: LocaleKeys.checkoutViewCheckout,
           fontWeight: FontWeight.bold,
           letterSpacing: 0,
         ),
@@ -39,12 +39,12 @@ class CheckoutView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Body(
-                          text: 'Order summary',
+                          text: LocaleKeys.checkoutViewOrderSummary,
                           fontWeight: FontWeight.w800,
                           letterSpacing: -0.5,
                         ),
                         Body(
-                          text: '1 Item',
+                          text: LocaleKeys.checkoutViewItem,
                         ),
                       ],
                     ),
@@ -55,22 +55,22 @@ class CheckoutView extends StatelessWidget {
               const SizedBox(height: 30),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Body(text: 'Subtotal excl. VAT'), Body(text: '£1,125')],
+                children: [Body(text: LocaleKeys.checkoutViewSubtotalExclVAT), Body(text: '£1,125')],
               ),
               const SizedBox(height: 10),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Body(text: 'Delivery to IP332AH excl. VAT'), Body(text: '£33,33')],
+                children: [Body(text: LocaleKeys.checkoutViewDeliveryToIP332AHExclVAT), Body(text: '£33,33')],
               ),
               const SizedBox(height: 10),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Body(text: 'Total cost excl. VAT'), Body(text: '£1,125,33')],
+                children: [Body(text: LocaleKeys.checkoutViewTotalCostExclVAT), Body(text: '£1,125,33')],
               ),
               const SizedBox(height: 10),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Body(text: 'VAT'), Body(text: '£231,67')],
+                children: [Body(text: LocaleKeys.checkoutViewVAT), Body(text: '£231,67')],
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 30.0),
@@ -82,12 +82,12 @@ class CheckoutView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Body(
-                    text: 'Order summary',
+                    text: LocaleKeys.checkoutViewOrderSummary,
                     fontWeight: FontWeight.w800,
                     letterSpacing: -0.5,
                   ),
                   Headline1(
-                    text: '£70',
+                    text: LocaleKeys.checkoutPrice,
                     fontWeight: FontWeight.w800,
                   ),
                 ],
@@ -112,7 +112,7 @@ class CheckoutView extends StatelessWidget {
                   ),
                   onPressed: null,
                   child: const Body(
-                    text: 'Go to payment',
+                    text: LocaleKeys.checkoutViewGoToPayment,
                     fontWeight: FontWeight.w700,
                     letterSpacing: 0,
                   ),

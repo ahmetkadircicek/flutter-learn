@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 import '../../components/text.dart';
 
@@ -83,18 +84,17 @@ class ProductDetailsView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Body(
-                    text: 'SVARTISDAL',
+                    text: LocaleKeys.productDetailsViewProductName,
                     fontWeight: FontWeight.w800,
                     letterSpacing: -0.5,
                   ),
                   Body(
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada ligula at lectus...',
+                    text: LocaleKeys.productDetailsViewProductDescription,
                     fontWeight: FontWeight.w500,
                     letterSpacing: -0.5,
                   ),
                   Headline1(
-                    text: '£70',
+                    text: LocaleKeys.productDetailsViewProductPrice,
                     fontWeight: FontWeight.w800,
                   ),
                 ],

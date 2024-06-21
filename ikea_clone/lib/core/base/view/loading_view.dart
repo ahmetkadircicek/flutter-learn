@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/components/text.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class LoadingView extends StatelessWidget {
   const LoadingView({super.key});
@@ -14,7 +15,7 @@ class LoadingView extends StatelessWidget {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.4,
                 child: const Headline2(
-                  text: 'Checking your delivery and collection options',
+                  text: LocaleKeys.loadingViewCheckingDeliveryAndCollectionOptions,
                   textAlign: TextAlign.center,
                 ),
               ),

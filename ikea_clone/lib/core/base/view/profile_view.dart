@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/components/text.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -13,7 +14,7 @@ class ProfileView extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              'Log out',
+              LocaleKeys.profileViewLogOut,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurface,
               ),
@@ -34,12 +35,12 @@ class ProfileView extends StatelessWidget {
                 children: [
                   SizedBox(height: 50),
                   Headline1(
-                    text: 'Hi, Ahmet',
+                    text: LocaleKeys.profileViewHi,
                     fontWeight: FontWeight.w700,
                   ),
                   SizedBox(height: 40),
                   Body2(
-                    text: 'Scan item',
+                    text: LocaleKeys.profileViewScanItem,
                     fontWeight: FontWeight.w700,
                     fontSize: 14,
                     letterSpacing: -0.5,
@@ -56,13 +57,13 @@ class ProfileView extends StatelessWidget {
               child: ListTile(
                 leading: const Icon(Icons.qr_code),
                 title: const Body2(
-                  text: 'Scan items in-store',
+                  text: LocaleKeys.profileViewScanItemsInStore,
                   fontWeight: FontWeight.w500,
                   fontSize: 14,
                   letterSpacing: 0,
                 ),
                 subtitle: Body2(
-                  text: 'Scan products and skip queues at checkout',
+                  text: LocaleKeys.profileViewScanProducts,
                   fontWeight: FontWeight.w500,
                   fontSize: 14,
                   letterSpacing: 0,
@@ -85,7 +86,7 @@ class ProfileView extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(30.0, 25.0, 0.0, 10.0),
               child: Body2(
-                text: 'Your IKEA',
+                text: LocaleKeys.profileViewYourIKEA,
                 fontWeight: FontWeight.w700,
                 fontSize: 15,
                 letterSpacing: -0.5,

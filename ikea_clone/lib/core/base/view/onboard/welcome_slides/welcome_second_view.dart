@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/base/view/onboard/welcome_slides/welcome_first_view.dart';
 import 'package:ikea_clone/core/components/text.dart';
 import 'package:ikea_clone/core/constants/color_constants.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class WelcomeSecondView extends StatelessWidget {
   const WelcomeSecondView({super.key});
@@ -24,12 +25,12 @@ class WelcomeSecondView extends StatelessWidget {
             ),
             const CurrentPageIndicator(currentIndex: 2),
             const Subtitle1(
-              text: 'Quickly save your favourites to shopping lists.',
+              text: LocaleKeys.secondWelcomeViewTitle,
               textAling: TextAlign.center,
             ),
             const SizedBox(height: 5),
             const Subtitle1(
-              text: 'Skip',
+              text: LocaleKeys.firstWelcomeViewSkip,
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,
             ),

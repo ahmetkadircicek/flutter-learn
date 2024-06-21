@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/components/text.dart';
 import 'package:ikea_clone/core/constants/color_constants.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class WelcomeFirstView extends StatelessWidget {
   const WelcomeFirstView({super.key});
@@ -27,13 +28,13 @@ class WelcomeFirstView extends StatelessWidget {
             const SizedBox(
               height: 30,
               child: Subtitle1(
-                text: 'You can now shop inspiratinal rooms based on your style.',
+                text: LocaleKeys.firstWelcomeViewTitle,
                 textAling: TextAlign.center,
               ),
             ),
             const SizedBox(height: 5),
             const Subtitle1(
-              text: 'Skip',
+              text: LocaleKeys.firstWelcomeViewSkip,
               textAling: TextAlign.center,
               fontWeight: FontWeight.bold,
             ),

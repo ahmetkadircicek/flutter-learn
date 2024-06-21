@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/base/view/onboard/select_country_view.dart';
 import 'package:ikea_clone/core/components/text.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -74,17 +75,17 @@ class HomeCarousel extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Body(
-                        text: 'SVARTISDAL',
+                        text: LocaleKeys.homeViewProductName,
                         fontWeight: FontWeight.w800,
                         letterSpacing: -0.5,
                       ),
                       Body(
-                        text: 'Modern and minimalistic white covered light...',
+                        text: LocaleKeys.homeViewProductDescription,
                         fontWeight: FontWeight.w500,
                         letterSpacing: -0.5,
                       ),
                       Headline1(
-                        text: '£70',
+                        text: LocaleKeys.homeViewProductPrice,
                       ),
                     ],
                   ),

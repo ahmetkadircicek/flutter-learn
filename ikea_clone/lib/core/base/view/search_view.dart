@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ikea_clone/core/components/text.dart';
 
+import '../../constants/locale_keys.dart';
+
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
 
@@ -15,14 +17,14 @@ class SearchView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Headline1(text: 'Search', fontWeight: FontWeight.bold),
+                const Headline1(text: LocaleKeys.searchViewSearch, fontWeight: FontWeight.bold),
                 const SizedBox(height: 30.0),
                 TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                     ),
-                    hintText: 'What are you looking for?',
+                    hintText: LocaleKeys.searchViewWhatAreYouLookingFor,
                     prefixIcon: const Icon(Icons.search, size: 24),
                     contentPadding: const EdgeInsets.all(16.0),
                   ),
@@ -31,9 +33,9 @@ class SearchView extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Headline2(text: 'Browse products'),
+                    const Headline2(text: LocaleKeys.searchViewBrowseProducts),
                     Subtitle1(
-                      text: 'View all',
+                      text: LocaleKeys.searchViewViewAll,
                       fontWeight: FontWeight.w500,
                       color: Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
                     ),

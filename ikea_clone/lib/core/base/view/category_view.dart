@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ikea_clone/core/components/text.dart';
+import 'package:ikea_clone/core/constants/locale_keys.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key});
@@ -28,7 +29,7 @@ class CategoryView extends StatelessWidget {
             const SizedBox(
               height: 90,
               child: Center(
-                child: Headline1(text: 'Storage & organization', fontWeight: FontWeight.w800),
+                child: Headline1(text: LocaleKeys.categoryViewStorageAndOrganization, fontWeight: FontWeight.w800),
               ),
             ),
             Container(
@@ -50,7 +51,7 @@ class CategoryView extends StatelessWidget {
                               Icon(Icons.fire_truck_outlined),
                               SizedBox(width: 10),
                               Body(
-                                text: 'Show availabilities',
+                                text: LocaleKeys.categoryViewShowAvailabilities,
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: 0,
                               ),
@@ -58,7 +59,7 @@ class CategoryView extends StatelessWidget {
                           ),
                           const SizedBox(height: 10),
                           Body(
-                            text: 'Select store or postal code to see what\'s in stock.',
+                            text: LocaleKeys.categoryViewSelectStoreOrPostalCodeToSeeWhatsInStock,
                             color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
                             letterSpacing: 0,
                           ),

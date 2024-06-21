@@ -83,7 +83,7 @@ class SelectCountryView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Continue',
+                            LocaleKeys.selectCountryViewCountryCountinue,
                             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                   color: Theme.of(context).colorScheme.onSecondary,
                                   fontWeight: FontWeight.bold,
